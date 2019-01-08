@@ -18,7 +18,8 @@
     "test:module5": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module5 || true",
     "test:module6": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module6 || true",
     "test:module7": "./node_modules/.bin/cross-env CI=true react-scripts test --env=jsdom --noStackTrace module7 || true",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile": "npx babel src"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -39,6 +40,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "babylon": "6.18.0",
     "chai": "4.1.2",
     "chai-enzyme": "0.8.0",
